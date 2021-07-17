@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Contact form">
+  <meta name="keywords" content="contact,forms">
+  <meta name="author" content="Suman Thapa">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/styleContactUs.css">
+    <style >
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Work Sans", sans-serif;
+}
+/* styking body */
+body{
+  margin: 0;
+  padding: 0;
+   background-image: url(images/aboutus.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+    </style>
+  </head>
+  <!--body section-->
+  <body>
+
+  <header style="width:100%; height: 100px; ">
+
+  
+    <div class="container"  >
+
+
+      <img src="" class="logo">
+    <nav style="float: right;"> 
+      <ul style="margin: 0; padding: 0; list-style: none;">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="CV.html">CV</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="#"> Contact Us</a></li>
+      </ul>
+      </nav>  
+    </div>
+  </header>
+    <form name="messageForm" onsubmit="validateForm()">
+  <div class="contact-form">
+    <h1>Contact Us</h1>
+    <div class="txtb">
+      <label>Full Name :</label>
+      <input type="text" name="fullname" value="" placeholder="Enter Your Name">
+    </div>
+
+    <div class="txtb">
+      <label>Email :</label>
+      <input type="email" name="email" value="" placeholder="Enter Your Email">
+    </div>
+
+    <div class="txtb">
+      <label>Phone Number :</label>
+      <input type="text" name="phone" value="" placeholder="Enter Your Phone Number">
+    </div>
+
+    <div class="txtb">
+      <label>Message :</label>
+      <textarea name="message"></textarea>
+    </div>
+    <p ><input class="btn" type="submit" value="Send"></p>
+  </div>
+</form>
+
+<script>
+  function validateForm() {
+        var fname = document.forms["messageForm"]["fullname"].value;
+        var email = document.forms["messageForm"]["email"].value;
+        var phone = document.forms["messageForm"]["phone"].value;
+        var message = document.forms["messageForm"]["message"].value;
+
+        if (fname == "" || email == "" || message == ""){
+          alert("Empty fields found. Please fill the form.");
+        }
+        else {
+          alert("Thank you for the feedback.");
+        }
+      }
+
+  </script>
+  </body>
+</html>

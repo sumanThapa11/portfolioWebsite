@@ -1,0 +1,173 @@
+body {
+ margin: 0px auto;
+ padding: 0;
+ background-image: url(../images/research.jpg);
+ background-size: cover;
+background-attachment: fixed;
+
+ font-family: "Work Sans",sans-serif;
+ font-weight: 600;}
+
+header::after{
+
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.logo{
+	float: left;
+	padding: 10px 0;
+}
+
+
+nav li{
+	display: inline-block;
+	margin-left: 70px;
+	padding-top: 23px;
+	color: #1e3f5a;
+
+
+	position: relative;
+}
+
+nav a {
+	color: #444;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 590;
+}
+
+nav a:hover{
+
+	color: #1e3f5a;
+	
+}
+
+nav a::before {
+	content: '';
+	display: block;
+	height: 5px;
+	width: 100%;
+	background-color: #1e3f5a;
+
+	position: absolute;
+	top: 0;
+	width: 0;
+
+	transition: all ease-in-out 250ms;
+
+
+}
+
+nav a:hover::before{
+	width: 100%;
+	color: #1e3f5a;
+}
+
+.image{
+	height: 400px;
+	width:48%;
+	float: left;
+
+}
+
+.image1{
+	height:400px;
+	width:48%;
+	float: right;
+	margin-left: 2%; 
+}
+
+.text{
+	
+	height:200px;
+	width:48%;
+	float: left;
+	
+	font-size: 18px;
+	
+}
+
+.text1{
+	
+	height:200px;
+	width:48%;
+	float: right;
+	
+	font-size: 18px;
+	
+}
+
+footer{
+	width: 100%; 
+	height:50px;
+}
+
+.footerIcons{
+	width: 100%;
+	height: auto;
+	margin: auto;
+
+}
+
+.footerIcons ul{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+
+}
+
+
+.footerIcons ul li{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 0px 10px;
+	border-radius: 100%;
+	background: #ffffff; 
+}
+
+.footerIcons ul li a{
+	color: #272727;
+	font-size: 25px;
+}
+
+.footerIcons ul li a i{
+	line-height: 50px
+}
+
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+.fa-facebook {
+ 
+  color: white;
+
+  
+}
+
+.fa-twitter {
+ 
+  color: white;
+  
+}
+
+
+.fa-instagram {
+ 
+  color: white;
+  
+}
+
+.fa-reddit{
+
+	color:white;
+}
+
+

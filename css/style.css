@@ -1,0 +1,287 @@
+
+body {
+ margin: 0px auto;
+ padding: 0;
+ background: #222;
+ font-family: "Work Sans",sans-serif;
+ font-weight: 600;
+background-image: url(../images/home1.jpg);
+background-size: cover;
+background-attachment: fixed;
+
+} 
+
+
+
+.containerPage{
+
+	width:100%;
+	margin: 0 auto;
+
+	text-align: center;
+}
+
+header::after{
+
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.logo{
+	float: left;
+	padding: 10px 0;
+}
+
+
+nav li{
+	display: inline-block;
+	margin-left: 70px;
+	padding-top: 23px;
+
+	position: relative;
+}
+
+nav a {
+	color: #444;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 22px;
+	font-weight: 500;
+}
+
+nav a:hover{
+
+	color: #000;
+	
+}
+
+nav a::before {
+	content: '';
+	display: block;
+	height: 5px;
+	width: 100%;
+	background-color: #444;
+
+	position: absolute;
+	top: 0;
+	width: 0;
+
+	transition: all ease-in-out 250ms;
+
+
+}
+
+nav a:hover::before{
+	width: 100%;
+	background-39color: #444;
+}
+
+
+.containerPage{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.containerPage .box{
+
+	position: relative;
+	width: 300px;
+	padding: 20px;
+	background: #fff;
+	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+	border-radius: 4px;
+	margin: 20px;
+	box-sizing: border-box;
+	overflow: hidden;
+	text-align: center;
+
+}
+
+.containerPage .box:before{
+	content: '';
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(255,255,255,.2); 
+	z-index: 2;
+	pointer-events: none;
+}
+
+.containerPage .box .icon{
+	position: relative;
+	width: 80px;
+	height: 80px;
+	color: #fff;
+	background: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	border-radius: 50%;
+	font-size: 40px;
+	font-weight: 700;
+	transition: 1s;
+
+}
+
+.containerPage .box:nth-child(1) .icon
+{
+	box-shadow: 0 0 0 0 #e91e63;
+	background: #e91e63;
+}
+
+.containerPage .box:nth-child(1):hover .icon{
+	box-shadow: 0 0 0 400px #e91e63;
+	
+
+}
+
+.containerPage .box:nth-child(2) .icon
+{
+	box-shadow: 0 0 0 0 #23e629;
+	background: #23e629;
+}
+
+.containerPage .box:nth-child(2):hover .icon{
+	box-shadow: 0 0 0 400px #23e629;
+	
+}
+
+.containerPage .box:nth-child(3) .icon
+{
+	box-shadow: 0 0 0 0 #2196f3;
+	background: #2196f3;
+}
+
+.containerPage .box:nth-child(3):hover .icon{
+	box-shadow: 0 0 0 400px #2196f3;
+	
+}
+
+.containerPage .box:nth-child(4) .icon
+{
+	box-shadow: 0 0 0 0 #6a0dad;
+	background: #6a0dad;
+}
+
+.containerPage .box:nth-child(4):hover .icon{
+	box-shadow: 0 0 0 400px #6a0dad;
+	
+}
+
+.containerPage .box .content{
+
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+
+}
+
+.containerPage .box:hover .content{
+
+	color: #fff;
+}
+
+.containerPage .box .content h2{
+
+	font-size: 20px;
+	margin: 10px 0;
+	padding: 0;
+}
+
+.containerPage .box .content p{
+
+	margin: 0;
+	padding: 0;
+}
+
+.containerPage .box .content a 
+{
+	display: inline-block;
+	padding: 10px 20px;
+	background: #fff;
+	border-radius: 4px; 
+	text-decoration: none;
+	color: 000;
+	font-weight: 500; 
+	margin-top: 200px;
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+
+
+footer{
+	width: 100%; 
+	height:100px;
+}
+
+.footerIcons{
+	width: 100%;
+	height: auto;
+	margin: auto;
+
+}
+
+.footerIcons ul{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+
+}
+
+
+.footerIcons ul li{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 0px 10px;
+	border-radius: 100%;
+	background: #ffffff; 
+}
+
+.footerIcons ul li a{
+	color: #272727;
+	font-size: 25px;
+}
+
+.footerIcons ul li a i{
+	line-height: 50px
+}
+
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+.fa-facebook {
+ 
+  color: white;
+
+  
+}
+
+.fa-twitter {
+ 
+  color: white;
+  
+}
+
+
+.fa-instagram {
+ 
+  color: white;
+  
+}
+
+.fa-reddit{
+
+	color:white;
+}
+
+
+
+
